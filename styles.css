@@ -63,7 +63,7 @@ nav ul li a:hover{
     width: 708px;
     height: 173px;
     left: 94px;
-    top: calc(50% - 173px/2 - 64.5px);
+    top: 30%;
     
     font-family: Roboto;
     font-style: normal;
