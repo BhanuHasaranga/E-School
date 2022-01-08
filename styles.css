@@ -12,7 +12,9 @@
      background-size: cover;
      color: rgb(0, 0, 0);
      padding: 0.7%;
-     position:relative;
+     position:fixed;
+     left:0;
+     top: 0;
  }
  .line1{
     position: relative;
@@ -68,7 +70,7 @@ nav ul li a:hover{
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 72px;
+    font-size: 250%;
     line-height: 84px;
     
     color: #000000;
@@ -84,18 +86,26 @@ nav ul li a:hover{
     font-family: Roboto;
     font-style: normal;
     font-weight: 100;
-    font-size: 24px;
+    font-size: 80%;
     line-height: 28px;
     
     color: #000000;
 }
 .text-box .btn{
     position: absolute;
-    width: 256px;
-    height: 67px;
-    left: 94px;
-    top: 70%;
+    width: 10%;
+    height: 7%;
+    left: 7%;
+    top: 75%;
+    cursor: pointer;
+
     
     background: #C4C4C4;
-    border-radius: 32px;
+    border-radius: 35px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 100%;
+    line-height: 35px;
 }
