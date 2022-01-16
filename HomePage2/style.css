@@ -57,7 +57,7 @@ body{
 
 .toggle-button{
     position: absolute;
-    top: 2rem;
+    top: 3rem;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -73,12 +73,35 @@ body{
     border-radius:10px;
     
 }
+
+
 @media(max-width:600px){
     .toggle-button{
         display: flex;
+        transition:all 5 ease-in-out;
     }
     
     .navbarLinks{
-        display: none;
+        /*display: none;*/
+        width: 100%;
     }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbarLinks ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbarLinks a{
+        padding: 1rem ;
+    }
+
+    .navbarLinks li{
+        text-align: center;
+    }
+
 }
