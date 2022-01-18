@@ -57,7 +57,7 @@ body{
 
 .toggle-button{
     position: absolute;
-    top: 3rem;
+    top: 2rem;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -78,11 +78,10 @@ body{
 @media(max-width:600px){
     .toggle-button{
         display: flex;
-        transition:all 5 ease-in-out;
     }
     
     .navbarLinks{
-        /*display: none;*/
+        display: none;
         width: 100%;
     }
 
