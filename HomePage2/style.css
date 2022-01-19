@@ -47,14 +47,6 @@ body{
     
 }
 
-.Description{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 150%;
-    line-height: 200%;
-}
-
 .toggle-button{
     position: absolute;
     top: 2rem;
@@ -75,13 +67,13 @@ body{
 }
 
 
-@media(max-width:600px){
+@media(max-width:700px){
     .toggle-button{
         display: flex;
     }
     
     .navbarLinks{
-        display: none;
+        display: flex;
         width: 100%;
     }
 
@@ -93,6 +85,7 @@ body{
     .navbarLinks ul{
         width: 100%;
         flex-direction: column;
+        
     }
 
     .navbarLinks a{
