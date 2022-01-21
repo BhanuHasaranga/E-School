@@ -1,8 +1,120 @@
-* {
-    box-sizing:border-box;
+:root{
+    --brightclr: #40e0d0;
+    --darkclr: #333333;
+    --white: #fff;
 }
 
-body{
+
+
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family:"Righteous";
+}
+
+.nav-container{
+    width: 100%;
+    background-color: var(--darkclr);
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 0.2fr auto 1fr;
+    align-items: center;
+    height: 88px;
+    width: 100%;
+    max-width: 2048px;
+}
+
+#navbar-logo{
+    height: 80px;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    list-style: none;
+    text-align: center;
+    justify-self:end;
+}
+.nav-menu li{
+    padding:0px 5px 0px 5px;
+}
+
+.nav-links{
+    color: var(--white);
+    text-decoration: none;
+    padding:15px 25px 15px 25px;
+    
+    border-radius: 40px;
+}
+
+.nav-links:hover{
+    color: var(--darkclr);
+    background-color: var(--brightclr);
+    transition: all 0.2s ease-out;
+}
+
+.menu-toggle .bar{
+    width:25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all .3 ease-in-out;
+    background: var(--white);
+}
+
+@media screen and (max-width:700px){
+    .nav-container{
+        position: relative;
+    }
+
+    .nav-menu{
+        display: grid;
+        grid-template-columns: auto;
+        background: var(--brightclr);
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: 88px;
+        /* left: -100%;
+        opacity: 0; */
+        transition: all 0.5s ease;
+    }
+
+    #navbar-logo{
+        margin-left: 20px;
+    }
+
+    .nav-menu.active{
+        background: var(--darkclr);
+        left: 0;
+        opacity: 1;
+        transform: all .5 ease;
+    }
+
+    .nav-links{
+        text-align: center;
+        line-height:80px;
+        width: 100%;
+        display: inline;
+
+    }
+
+    .nav-links:hover{
+        background-color: var(--brightclr);
+        color: var(--darkclr);
+        transition: all 0.4 ease-out;
+    }
+}
+
+
+
+
+/* body{
     margin:0;
     padding:0;
 }
@@ -15,7 +127,7 @@ body{
     display: flex;
     justify-content:  space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #333333;
 }
 
 .navbarLinks ul{
@@ -43,7 +155,7 @@ body{
 }
 
 .navbarLinks a:hover{
-    color: turquoise;
+    color: #40e0d0;
     
 }
 
@@ -96,4 +208,4 @@ body{
         text-align: center;
     }
 
-}
+} */
