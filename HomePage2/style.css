@@ -1,21 +1,24 @@
 :root{
-    --brightclr: #40e0d0;
+    --brightclr: #2edb70;
     --darkclr: #333333;
     --white: #fff;
 }
-
-
 
 * {
     box-sizing:border-box;
     margin: 0;
     padding: 0;
-    font-family:"Righteous";
+    
 }
 
 .nav-container{
+    position: fixed;
     width: 100%;
     background-color: var(--darkclr);
+    box-shadow: 0px 2px 10px grey;
+    z-index: 1;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
 }
 
 .navbar{
@@ -41,6 +44,7 @@
     text-align: center;
     justify-self:end;
 }
+
 .nav-menu li{
     padding:0px 5px 0px 5px;
 }
@@ -70,6 +74,109 @@
    
 }
 
+#BG{
+    height: 57.5rem;
+    width:119rem;
+    z-index: -1;
+}
+
+.test{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    top: 35%;
+}
+
+.LeftContent{
+    font-family: 'Outfit', sans-serif;
+    margin: 2rem;
+    padding: 10px;
+}
+.test h1{
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.test .LeftContent h1 span{
+    color: var(--brightclr);
+}
+.test h2{
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.buttons{
+    margin-top: 5%;
+    font-size: 1.1rem;
+    margin-left: 0%;
+}
+
+.buttons a{
+    margin-right: 3rem;
+    padding: 20px 60px 20px 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease-out;
+}
+
+.buttons .solid-btn{
+    position: relative;
+    color: var(--white);
+    background-color: var(--brightclr);
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.buttons .border-btn{
+    color: var(--brightclr);
+    border-color: var(--brightclr);
+    border: 2px solid;
+    border-radius: 30px;
+    font-weight: 300;
+}
+
+.buttons .solid-btn:hover{
+    color: var(--brightclr);
+    background-color: var(--darkclr);
+}
+
+.buttons .border-btn:hover{
+    color: var(--darkclr);
+    background-color: var(--brightclr);
+    border-color: var(--brightclr);
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 60%;
+    right: 5%;
+}
+
+.images .girl{
+    height: 280%;
+    left: 60%;
+}
+
+.images .shape{
+    left: 60%;
+}
+
+.images img{
+    position: absolute;
+    transform: translateX(-50%);
+    transition: all 0.4s ease-out;
+}
+
+.images :hover{
+    left: 55%;
+}
+
+
+
+
 @media screen and (max-width:700px){
     .nav-container{
         position: relative;
@@ -83,10 +190,11 @@
         width: 100%;
         position: absolute;
         top: 88px;
-        left: -100%;
+        right: -105%;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
-        opacity: 0;
+        /* opacity: 0; */
+        box-shadow: 0px 10px 10px grey;
         transition: all 0.5s ease;
     }
 
@@ -96,8 +204,8 @@
 
     .nav-menu.active{
         background: var(--darkclr);
-        left: 0;
-        opacity: 1;
+        right: 0;
+        /* opacity: 1; */
         transform: all .5 ease;
     }
 
@@ -110,6 +218,7 @@
     }
     .nav-menu li:hover{
         background: var(--brightclr);
+        transition: 0.2s ease-out;
         
     }
 
@@ -164,6 +273,7 @@
     #mobile-menu.is-active .bar:nth-child(2){
         opacity: 0;
     }
+
 }
 
 
