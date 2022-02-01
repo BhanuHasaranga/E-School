@@ -1,0 +1,41 @@
+.mainText{
+    position: left;
+    width: 600px;
+    height: 100px;
+    left: 55%;
+    top: 10px;
+    
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 60px;
+    line-height:350px;
+    text-align: center;
+    
+    color: #000000;
+}
+.streambtn{
+    position: relative;
+    width: 250px;
+    height: 20px;
+    padding: 10px;
+    margin: 20px;
+    left: 5%;
+    top: 100px;
+    display: block;
+    
+    background: #C4C4C4;
+    border-radius: 29px;
+
+    font-size: 26px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    color: black;
+    text-decoration: none;
+}
+.streambtn:hover{
+    cursor: pointer;
+}
