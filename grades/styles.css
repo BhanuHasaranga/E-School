@@ -1,3 +1,8 @@
+:root{
+    --brightclr: #2edb70;
+    --darkclr: #333333;
+    --white: #fff;
+}
 .nav-container{
     position: fixed;
     /* display: none; */
@@ -186,7 +191,7 @@
     top: 150px;
     display: block;
     
-    background: #C4C4C4;
+    background: var(--darkclr);
     border-radius: 29px;
 
     font-size: 26px;
@@ -195,9 +200,12 @@
     font-weight: bold;
     text-align: center;
     line-height: 20px;
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 .gradebtn:hover{
     cursor: pointer;
+    color: var(--darkclr);
+    background-color: var(--brightclr);
+    transition: all 0.2s ease-out;
 }
