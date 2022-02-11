@@ -139,9 +139,7 @@
       
   }
 
-  .menu-toggle{
-      cursor: pointer;
-  }
+  
 
   .menu-toggle:hover span:nth-child(2){
       transform: translateX(10px);
