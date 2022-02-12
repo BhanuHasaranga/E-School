@@ -1,3 +1,8 @@
+:root{
+    --brightclr: #2edb70;
+    --darkclr: #333333;
+    --white: #fff;
+}
 .nav-container{
     position: fixed;
     /* display: none; */
@@ -9,7 +14,6 @@
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
 }
-
 .navbar{
     display: grid;
     grid-template-columns: 0.2fr auto 1fr;
@@ -17,6 +21,7 @@
     width: 100%;
     max-width: 2048px;
 }
+
 
 #navbar-logo{
     height: 80px;
