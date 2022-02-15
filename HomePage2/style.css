@@ -212,16 +212,6 @@ html {
     color: var(--brightclr);
 }
 
-.featuredlist{
-    margin:0 00% 0 25%;
-    background-color: #fff;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-
 
 /* 1920*1080  Resolution Settings */
 
@@ -261,6 +251,27 @@ html {
         top:0vh;
         height: 86vh;
     }
+    .courseText{
+        position: relative;
+        padding-top: 8vh;
+    }
+    
+    .courcesTitle{
+
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
+    .courseSlogan{
+        font-size: 1.5rem;
+
+    }
+    .courseDesc{
+        font-size: 1.4rem;
+        font-weight: 100;
+        padding: 3rem;
+        color: var(--brightclr);
+    }
+    
 }
 
 /*Mobile Responsive*/
@@ -364,3 +375,4 @@ html {
     }
 
 }
+
