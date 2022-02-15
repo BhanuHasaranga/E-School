@@ -129,6 +129,7 @@
         padding: 0;
         transition: all .4 ease-out;
 
+
     }
 
     #mobile-menu{
@@ -155,16 +156,6 @@
         background-color: var(--brightclr);
         
     }
-    .gradebtn{
-        position: relative;
-        width: 30px;
-        height: 20px;
-        padding: 15px;
-        margin: 20px;
-        left: 2%;
-        top: 150px;
-        display: block;
-    }
 
     #mobile-menu.is-active .bar:nth-child(1){
         transform:translateY(8px) rotate(45deg);
@@ -174,6 +165,11 @@
     }
     #mobile-menu.is-active .bar:nth-child(2){
         opacity: 0;
+    }
+    .gradebtn{
+        position: relative;
+        left: 0;
+        width: 100px;
     }
 
 }
@@ -195,11 +191,11 @@
 }
 .gradebtn{
     position: relative;
-    width: 2s00px;
+    width: 300px;
     height: 20px;
     padding: 15px;
-    margin: 10px;
-    left: 62%;
+    margin: 30px;
+    left: 60%;
     top: 150px;
     display: block;
     
@@ -220,4 +216,20 @@
     color: var(--darkclr);
     background-color: var(--brightclr);
     transition: all 0.2s ease-out;
+}
+.leftContent{
+    position: absolute;
+    /* background-color: wheat; */
+    left:5%;
+    top: 14%;
+}
+.girl{
+    position: relative;
+    left: 40%;
+    top: 0vh;
+    height:35rem;
+    width: auto;
+}
+.gradebtns{
+    list-style: none;
 }
