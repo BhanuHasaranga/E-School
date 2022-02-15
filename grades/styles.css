@@ -195,7 +195,7 @@
     height: 20px;
     padding: 15px;
     margin: 30px;
-    left: 62%;
+    left: 60%;
     top: 150px;
     display: block;
     
@@ -221,11 +221,15 @@
     position: absolute;
     /* background-color: wheat; */
     left:5%;
-    top: 20%;
+    top: 14%;
 }
 .girl{
     position: relative;
+    left: 40%;
     top: 0vh;
-    height:30rem;
+    height:35rem;
     width: auto;
+}
+.gradebtns{
+    list-style: none;
 }
