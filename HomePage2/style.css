@@ -180,6 +180,12 @@ html {
     background-color: var(--darkclr);
     top:0vh;
     height: 90vh;
+    
+}
+.featuredTitle{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .courseText{
@@ -211,6 +217,35 @@ html {
     padding: 3rem;
     color: var(--brightclr);
 }
+
+.featuredTitle{
+    background-color:aqua;
+    position: relative;
+}
+.images img{
+    width: auto;
+    height: 10rem;
+}
+
+.images{
+    padding: 1rem 3rem 1rem 3rem;
+    /* background-color: #2edb70; */
+    transition: all 0.5s ease;
+}
+.featuredList{
+    position: absolute;
+    /* background-color: #fff; */
+    left: 50%;
+    transform: translate(-50%);
+    display: grid;
+    grid-template-columns: 0.2fr auto 3fr;
+    
+}
+
+.images:hover{
+    transform: scale(1.1);
+}
+    
 
 
 /* 1920*1080  Resolution Settings */
