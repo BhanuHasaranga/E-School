@@ -56,7 +56,7 @@
     width: 1.5rem;
     cursor: pointer;
   }
-  
+
   .menu-toggle:hover span:nth-child(2) {
     transform: translateX(10px);
     background-color: var(--brightclr);
@@ -70,178 +70,59 @@
     border-radius: 1rem;
   }
 
-
-@media screen and (max-width:700px){
-    .nav-container{
-        position: relative;
-    }
-
-    .nav-menu{
-        display: grid;
-        grid-template-columns: auto;
-        background: var(--darkclr);
-        margin: 0;
-        width: 100%;
-        position: absolute;
-        top: 88px;
-        right: -105%;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
-        /* opacity: 0; */
-        box-shadow: 0px 10px 10px grey;
-        transition: all 0.5s ease;
-    }
-
-    #navbar-logo{
-        margin-left: 20px;
-    }
-
-    .nav-menu.active{
-        background: var(--darkclr);
-        right: 0;
-        /* opacity: 1; */
-        transform: all .5 ease;
-    }
-
-    .nav-links{
-        text-align: center;
-        line-height:80px;
-        width: 100%;
-        display: inline;
-
-    }
-    .nav-menu li:hover{
-        background: var(--brightclr);
-        transition: 0.2s ease-out;
-        
-    }
-
-    .nav-menu li{
-        border-radius:30px;
-    }
-
-    .nav-links{
-        padding:0;
-        border-radius: 0;
-        transition: all .4 ease-out;
-    }
-
-    .nav-links:hover{
-        border: none;
-        padding: 0;
-        transition: all .4 ease-out;
-
-
-    }
-
-    #mobile-menu{
-        position: absolute;
-        top: 25%;
-        right: 5%;
-        transform:translate(5%,20%);
-    
-        
-    }
-
-    .menu-toggle .bar{
-        display: block;
-        
-        
-    }
-
-    .menu-toggle{
-        cursor: pointer;
-    }
-
-    .menu-toggle:hover span:nth-child(2){
-        transform: translateX(10px);
-        background-color: var(--brightclr);
-        
-    }
-
-    #mobile-menu.is-active .bar:nth-child(1){
-        transform:translateY(8px) rotate(45deg);
-    }
-    #mobile-menu.is-active .bar:nth-child(3){
-        transform:translateY(-8px) rotate(-45deg);
-    }
-    #mobile-menu.is-active .bar:nth-child(2){
-        opacity: 0;
-    }
-    .hero{
-        position: relative;
-    }
-    .gradebtn{
-        position: relative;
-        left: 0;
-        width: 100px;
-    }
-    .girl{
-        position: relative;
-        left: 0;
-        top: 8vh;
-        height:35rem;
-        width: auto;
-    }    
-
-}
-.mainText{
+  .featured {
+    padding: 2rem;
     position: relative;
-    width: 650px;
-    height: 50px;
-    left: 53%;
-    top: 100px;
-    
-    font-family: Roboto;
-    font-style: normal;
+    top: 5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .right-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .mainText {
+    top: 2rem;
+    position: relative;
     font-weight: bold;
     font-size: 72px;
-    line-height: 84px;
     text-align: center;
-    
-    color: #000000;
-}
-.gradebtn{
+    color: var(--darkclr);
+  }
+  
+  .grade-btns {
     position: relative;
-    width: 300px;
-    height: 20px;
-    padding: 15px;
-    margin: 30px;
-    left: 60%;
-    top: 150px;
-    display: block;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  
+  .grade-btn {
+    list-style: none;
+    padding: 1rem 2rem 1rem 2rem;
     background: var(--darkclr);
-    border-radius: 29px;
-
+    border-radius: 3rem;
     font-size: 26px;
-    font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
     text-align: center;
-    line-height: 20px;
-    color: rgb(255, 255, 255);
     text-decoration: none;
-}
-.gradebtn:hover{
+    color: var(--white);
+    display: block;
+  }
+  .grade-btn:hover {
     cursor: pointer;
     color: var(--darkclr);
     background-color: var(--brightclr);
     transition: all 0.2s ease-out;
-}
-.leftContent{
-    position: absolute;
-    /* background-color: wheat; */
-    left:5%;
-    top: 14%;
-}
-.girl{
+  }
+  
+  .girl {
     position: relative;
-    left: 55%;
-    top: 8vh;
-    height:35rem;
+    height: 35rem;
     width: auto;
-}
-.gradebtns{
-    list-style: none;
-}
+  }
