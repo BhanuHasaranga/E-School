@@ -190,7 +190,7 @@ html {
 
 .courseText{
     position: relative;
-    padding-top: 10vh;
+    padding-top: 8vh;
     /* background-color: #2edb70; */
     text-align: center;
     
@@ -198,7 +198,7 @@ html {
 
 .courcesTitle{
     color: var(--white);
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
 }
 
@@ -207,43 +207,98 @@ html {
 }
 .courseSlogan{
     color: var(--white);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 .courseDesc{
     color: var(--white);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 100;
     padding: 3rem;
     color: var(--brightclr);
 }
-
-.featuredTitle{
-    background-color:aqua;
+.keyfeatures{
+    color: #6e6e6e;
+    padding-bottom: 2rem;
+    text-align: center;
     position: relative;
-}
-.images img{
-    width: auto;
-    height: 10rem;
-}
-
-.images{
-    padding: 1rem 3rem 1rem 3rem;
-    /* background-color: #2edb70; */
-    transition: all 0.5s ease;
-}
-.featuredList{
-    position: absolute;
-    /* background-color: #fff; */
     left: 50%;
     transform: translate(-50%);
-    display: grid;
-    grid-template-columns: 0.2fr auto 3fr;
-    
+}
+.features svg{
+    height: auto;
+    width: 2.5rem;
+}
+svg path{
+    fill:#6e6e6e;
+    transition: all 0.3s ease;
 }
 
-.images:hover{
-    transform: scale(1.1);
+/* .features img{
+    height: auto;
+    width: 2.5rem;
+} */
+
+
+.features{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+
+}
+.icon{
+    display: flex;
+    transition: all .5s ease;
+}
+.text{
+    padding-left: 1rem;
+    color:#6e6e6e;
+    transition: all 0.3s ease;
+}
+.text h4{
+    font-weight: 300;
+}
+
+.icon:hover{
+    cursor:default;
+    transform: scale(1.05);
+}
+.icon:hover .text{
+    color: #2edb70;
+}
+.icon:hover svg path{
+    fill: #2edb70;
+}
+
+.selectCourse{
+    /* background-color:aqua; */
+    padding-top: 8rem;
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 600;
+    left: 50%;
+    transform: translate(-50%);
+    
+    
+
+}
+
+.selectCourse .solid-btn-courses{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+    padding: 20px 40px 20px 40px;
+    border: 1px solid;
+    border-radius: 30px;
+    border-color: #2edb70;
+    transition: all .2s ease-out;
+}
+
+.selectCourse .solid-btn-courses:hover{
+    color: var(--darkclr);
+    background-color: #2edb70;
+
 }
     
 
