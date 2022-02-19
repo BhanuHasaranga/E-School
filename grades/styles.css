@@ -1,10 +1,8 @@
-* {
-    font-family: 'outfit', sans-serif, monospace;
-  }
 :root{
     --brightclr: #2edb70;
     --darkclr: #333333;
     --white: #fff;
+    font-family: 'outfit', sans-serif, monospace;
 }
 .nav-container {
     background-color: var(--darkclr);
