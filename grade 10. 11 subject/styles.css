@@ -70,7 +70,7 @@
 
   .mainText {
     top:7rem;
-    left: 2rem;
+    left: 5rem;
     position: relative;
     font-weight: bold;
     font-size: 72px;
@@ -83,7 +83,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    left: 0.5rem;
+    left: 0;
     top: 10rem;
   }
 
