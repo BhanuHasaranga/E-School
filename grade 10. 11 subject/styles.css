@@ -1,10 +1,8 @@
-* {
-    font-family: 'outfit', sans-serif, monospace;
-  }
 :root{
     --brightclr: #2edb70;
     --darkclr: #333333;
     --white: #fff;
+    font-family: 'outfit', sans-serif, monospace;
 }
 .nav-container {
     background-color: var(--darkclr);
@@ -71,7 +69,8 @@
   }
 
   .mainText {
-    top:5rem;
+    top:7rem;
+    left: 2rem;
     position: relative;
     font-weight: bold;
     font-size: 72px;
@@ -79,27 +78,27 @@
     color: var(--darkclr);
   }
 
-  .selection-buttons{
+  .btn-group{
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5rem;
-    left: 10rem;
-    right: 10r;
+    left: 0.5rem;
     top: 10rem;
   }
 
-  .button {
-    list-style: none;
-    padding: 5rem 5rem 5rem 5rem;
-    background: var(--darkclr);
+
+  .btn-group .button {
+    background-color: var(--darkclr);
+    color: var(--white);
     border-radius: 3rem;
-    font-size: 26px;
-    font-weight: bold;
+    padding: 5rem;
     text-align: center;
     text-decoration: none;
-    color: var(--white);
-    display: block;
-    width: 5rem;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 3rem 3rem;
+    background: var(--darkclr);
   }
