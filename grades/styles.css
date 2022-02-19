@@ -144,7 +144,7 @@
     .nav-menu {
       position: absolute;
       display: none;
-      width: 15rem;
+      width: 25rem;
       top: 5rem;
       right: 2rem;
       flex-direction: column;
