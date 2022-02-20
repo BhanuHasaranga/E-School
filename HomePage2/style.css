@@ -25,7 +25,7 @@ html {
     position: fixed;
     /* display: none; */
     width: 100%;
-    height: 10vh;
+    height: 5rem;
     background-color: var(--darkclr);
     box-shadow: 0px 2px 10px rgb(39, 39, 39);
     z-index: 999;
@@ -90,7 +90,7 @@ html {
     background-size: cover;
     height: 100vh;
     padding-top: 30vh;
-    background-color: rgb(235, 235, 235);
+    background-color: #ebebeb;
 }
 
 .hero_container{
@@ -179,7 +179,7 @@ html {
     position: relative;
     background-color: var(--darkclr);
     top:0vh;
-    height: 90vh;
+    height: 100vh;
     
 }
 .featuredTitle{
@@ -190,7 +190,7 @@ html {
 
 .courseText{
     position: relative;
-    padding-top: 8vh;
+    padding-top: 18vh;
     /* background-color: #2edb70; */
     text-align: center;
     
@@ -219,7 +219,7 @@ html {
 }
 .keyfeatures{
     color: #6e6e6e;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     text-align: center;
     position: relative;
     left: 50%;
@@ -274,14 +274,12 @@ svg path{
 .selectCourse{
     /* background-color:aqua; */
     padding-top: 8rem;
+    padding-bottom: 5rem;
     position: absolute;
     font-size: 1rem;
     font-weight: 600;
     left: 50%;
     transform: translate(-50%);
-    
-    
-
 }
 
 .selectCourse .solid-btn-courses{
@@ -300,7 +298,93 @@ svg path{
     background-color: #2edb70;
 
 }
-    
+
+.third{
+    position: relative;
+    top: 0vh;
+    height: 150vh;
+    background-color: #ebebeb;
+}
+.top{
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    background-image: url(images/blackbord1.jpg);
+    background-size: cover;
+    background-color:var(--darkclr);
+}
+.top h1{
+    padding-top: 10vh;
+    text-align: center;
+    font-size: 4rem;
+    color:var(--white);
+}
+.top h1 span{
+    color: var(--brightclr);
+}
+
+.aboutDesc h1{
+    padding-top: 2rem;
+    text-align: center;
+    font-weight: 300;
+}
+.goals{
+    padding-top: 3rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+    /* background-color: aqua; */
+
+}
+.goalblock{
+    cursor: pointer;
+    width: 20%;
+    padding: 5rem 3rem 5rem 3rem;
+
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid;
+    border-color: var(--brightclr);
+    /* margin:0 7% 0 7%; */
+    transition: all 0.5s ease;
+}
+.goalblock svg{
+    height: auto;
+    width: 5rem;
+    left: 50%;
+}
+.goalblock svg path{
+    fill: var(--darkclr);
+}
+.goalText h1{
+    font-size: 1.5rem;
+    color: var(--darkclr);
+}
+.goalText h2{
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    display: none;
+}
+
+.goalblock:hover{
+    cursor: pointer;
+    background-color: var(--darkclr);
+    border-color: var(--darkclr);
+    width: 40%;
+} 
+.goalblock:hover svg path{
+    fill: var(--brightclr);
+} 
+.goalblock:hover .goalText h1{
+    color: var(--white);
+}
+.goalblock:hover .goalText h2{
+    display: block;
+    color: var(--white);
+}
 
 
 /* 1920*1080  Resolution Settings */
@@ -313,6 +397,47 @@ svg path{
     .sloganText{
         font-size: 1.9rem;
     }
+    .courcesTitle{
+        font-size: 5rem;
+
+    }
+    .courseSlogan{
+        font-size: 2rem;
+    }
+    .courseDesc{
+        font-size: 2rem;
+        padding: 4rem;
+    }
+    .keyfeatures{
+        padding-bottom: 4rem;
+    }
+    .features svg{
+        height: auto;
+        width: 2.5rem;
+    }
+    
+    .selectCourse{
+        /* background-color:aqua; */
+        padding-top: 7rem;
+        padding-bottom: 5rem;
+        position: absolute;
+        font-size: 1rem;
+        font-weight: 600;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    .selectCourse .solid-btn-courses{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--white);
+        padding: 20px 40px 20px 40px;
+        border: 1px solid;
+        border-radius: 30px;
+        border-color: #2edb70;
+        transition: all .2s ease-out;
+    }
+    
 }
 
 /* 1366*768  Resolution Settings */
@@ -320,7 +445,7 @@ svg path{
 @media screen and (max-width:1366px){
 
     .nav-container{
-        height: 14vh;
+        height: 5rem;
     }
     
     .welcomeText{
@@ -339,7 +464,7 @@ svg path{
         position: relative;
         background-color: var(--darkclr);
         top:0vh;
-        height: 86vh;
+        height: 100vh;
     }
     .courseText{
         position: relative;
@@ -361,8 +486,69 @@ svg path{
         padding: 3rem;
         color: var(--brightclr);
     }
+    .courseText{
+        position: relative;
+        padding-top: 18vh;
+        /* background-color: #2edb70; */
+        text-align: center;
+        
+    }
+    .keyfeatures{
+        padding-bottom: 2rem;
     
+    }
+    .selectCourse{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+    }
+    .goalblock{
+        width: 25%;
+        padding: 1.5rem;
+        text-align: center;
+        border-radius: 25px;
+        border: 2px solid;
+        border-color: var(--brightclr);
+        /* margin:0 3% 0 3%; */
+        transition: all 0.5s ease;
+    }
+    .goalblock svg{
+        height: auto;
+        width: 5rem;
+        left: 50%;
+    }
+    .goalblock svg path{
+        fill: var(--darkclr);
+    }
+    .goalText h1{
+        font-size: 1.5rem;
+        color: var(--darkclr);
+    }
+    .goalText h2{
+        padding-top: 1rem;
+        font-size: 1rem;
+        font-weight: 300;
+        display: none;
+    }
+    
+    .goalblock:hover{
+        cursor: pointer;
+        background-color: var(--darkclr);
+        border-color: var(--darkclr);
+        width: 40%;
+    } 
+    .goalblock:hover svg path{
+        fill: var(--brightclr);
+    } 
+    .goalblock:hover .goalText h1{
+        color: var(--white);
+    }
+    .goalblock:hover .goalText h2{
+        display: block;
+        color: var(--white);
+    }
 }
+
 
 /*Mobile Responsive*/
 
