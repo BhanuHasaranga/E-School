@@ -70,13 +70,13 @@
   }
 
 .featured{
-    top: 7rem;
+    top: 10rem;
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
-    gap: 5rem;
+    gap: 7rem;
 
   }
 
@@ -140,6 +140,7 @@
     font-weight: 700;
     border: 1px solid var(--brightclr);
     background-color: var(--white);
+    font-size: 1rem;
   }
 
   .home-button:hover{
