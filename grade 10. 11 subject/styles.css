@@ -69,17 +69,18 @@
     border-radius: 1rem;
   }
 
-  .featured{
-    height: 100vh;
+.featured{
+    top: 7rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    align-items: center;
+    gap: 5rem;
 
   }
 
   .mainText {
-    padding-top:10rem;
-    left: 5rem;
-    width: 20%;
     position: relative;
     font-weight: bold;
     font-size: 72px;
@@ -90,60 +91,138 @@
  .features svg{
     height: auto;
     width: 2.5rem;
-}
-svg path{
-    fill:#6e6e6e;
-    transition: all 0.3s ease;
-}
+  }
+    svg path{
+      fill:#6e6e6e;
+      transition: all 0.3s ease;
+    }
 
-.features{
-    margin-left: 5%;
-    margin-right: 5%;
+  .features{
     display: flex;
-    padding-top: 5rem;
-    grid-template-columns: 3fr 3fr 3fr 3fr;
+    flex-direction: row;
     justify-content: space-between;
+    position: relative;
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
-}
-.icon{
+  }
+  .icon{
     display: flex;
+    flex-direction: row;
+    gap: 1rem;
     transition: all .5s ease;
-}
-.text{
-    padding-left: 1rem;
+  }  
+  .text{
     color:#6e6e6e;
     transition: all 0.3s ease;
-}
-.text h4{
+  }
+  .text h4{
     font-weight: 300;
-}
+  }
 
-.icon:hover{
+  .icon:hover{
     cursor:default;
     transform: scale(1.05);
-}
-.icon:hover .text{
+  }
+  .icon:hover .text{
     color: #2edb70;
-}
-.icon:hover svg path{
+  }
+  .icon:hover svg path{
     fill: #2edb70;
-}
+  }
 
   .home-button{
     position: relative;
-    left: 50%;
-    top: 5rem;
     border-radius: 40px;
-    padding: 15px 25px 15px 25px;
+    padding: 1rem 2rem 1rem 2rem;
     cursor: pointer;
     font-weight: 700;
     border: 1px solid var(--brightclr);
     background-color: var(--white);
-    transform: translate(-50%);
   }
 
   .home-button:hover{
     background-color: var(--brightclr);
     color: var(--white);
     transition: all 0.2s ease-out;
+  }
+
+  @media screen and (max-width: 700px) {
+    .nav-container {
+      height: 4rem;
+    }
+  
+    #navbar-logo {
+      position: relative;
+      height: 2rem;
+      left: 1rem;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+    .nav-menu {
+      position: absolute;
+      display: none;
+      width: 25rem;
+      top: 5rem;
+      right: 2rem;
+      flex-direction: column;
+      background-color: var(--darkclr);
+      padding: 1rem;
+      border-radius: 1rem;
+      align-items: stretch;
+    }
+  
+    .nav-links {
+      color: var(--white);
+      list-style: none;
+      padding: 1rem 2rem 1rem 2rem;
+      border-radius: 40px;
+      text-align: center;
+      display: block;
+    }
+  
+    .nav-links:hover {
+      color: var(--darkclr);
+      background-color: var(--brightclr);
+      transition: all 0.2s ease-out;
+    }
+  
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    .menu-toggle.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .menu-toggle.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .menu-toggle.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-toggle {
+      position: absolute;
+      top: 25%;
+      right: 5%;
+      transform: translate(5%, 20%);
+    }
+
+    .featured{
+      top: 6rem;
+    }
+
+    .features{
+      padding-left: 2rem;
+      padding-right: 2rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .text h4{
+      display: none;
+    }
   }
