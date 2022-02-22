@@ -27,8 +27,8 @@ html {
     width: 100%;
     height: 5rem;
     background-color: var(--darkclr);
-    box-shadow: 0px 2px 10px rgb(39, 39, 39);
-    z-index: 999;
+    box-shadow: 0px 2px 10px rgb(0, 0, 0);
+    z-index: 1;
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
 }
@@ -179,7 +179,7 @@ html {
     position: relative;
     background-color: var(--darkclr);
     top:0vh;
-    height: 100vh;
+    height: calc(100vh - 5rem) ;
     
 }
 .featuredTitle{
@@ -299,10 +299,17 @@ svg path{
 
 }
 
+#about-link{
+height: 5rem;
+position: relative;
+background-color: var(--darkclr);
+}
+
 .third{
     position: relative;
-    top: 0vh;
-    height: 150vh;
+    /* top: 200vh; */
+    height: 300vh;
+    width: 100%;
     background-color: #ebebeb;
 }
 .top{
@@ -340,9 +347,8 @@ svg path{
 }
 .goalblock{
     cursor: pointer;
-    width: 20%;
-    padding: 5rem 3rem 5rem 3rem;
-
+    width: 25%;
+    padding: 3rem 3rem 2rem 3rem;
     text-align: center;
     border-radius: 25px;
     border: 2px solid;
@@ -359,14 +365,15 @@ svg path{
     fill: var(--darkclr);
 }
 .goalText h1{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--darkclr);
 }
 .goalText h2{
     padding-top: 1rem;
     font-size: 1rem;
     font-weight: 300;
-    display: none;
+    opacity: 0;
+    
 }
 
 .goalblock:hover{
@@ -384,8 +391,237 @@ svg path{
 .goalblock:hover .goalText h2{
     display: block;
     color: var(--white);
+    animation: fadeInFromNone 0ms ease-out;
+    animation-delay: 1s;
+    opacity: 1;
 }
 
+@keyframes fadeInFromNone {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.divclass{
+    padding-top: 10rem;
+}
+.divider{
+    /* padding-top: 4rem; */
+    height: .1rem;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: var(--darkclr);
+}
+.sustainableTopic{
+    padding-top: 5rem;
+    padding-left: 2rem;
+}
+.susdesc-main{
+    padding: 8rem 0 8rem 0;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #2edb70; */
+}
+.susdesc-main img{
+    height: 25rem;
+    width: auto;
+    border-radius: 30px;
+    padding-right: 1rem;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all .5s ease;
+}
+.susdesc-main img:hover{
+    transform: scale(1.02);
+}
+.susTopic{
+    font-size: 4rem;
+    font-weight: 400;
+    transition: all .2s ease;
+}
+.susTopic span{
+    color: var(--brightclr);
+}
+.susdesc-right{
+    width: 50%;
+}
+.susDesc{
+    font-size: 2rem;
+    
+}
+.susTopic:hover{
+    transform: scale(1.02);
+}
+.source{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    padding-right: 2rem;
+    text-align: right;
+}
+.learnmoreSDG{
+    padding-top: 2rem;
+    /* text-decoration: none; */
+}
+.learnmoreSDG-btn {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--darkclr);
+    border: 1px solid;
+    border-color: var(--brightclr);
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    border-radius: 3rem;
+    transition: all 0.3s ease;
+}
+.learnmoreSDG-btn:hover{
+    color: var(--white);
+    background-color: var(--darkclr);
+    border-color: var(--darkclr);
+
+}
+.susImportance-Topic{
+    font-size: 4rem;
+    font-weight: 300;
+}
+.susImportance-Topic{
+    font-size: 4rem;
+    font-weight: 300;
+}
+.susImportance-Topic  span{
+    color: var(--brightclr);
+}
+.susimportanceBlock1{
+    margin: 0 2rem 0 2rem;
+    display: flex;
+}
+.susDesc-Importance p{
+    padding-top: 5rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.susimportanceBlock1_p{
+    padding-right: 0rem;
+}
+#p1{
+    /* padding-left: 5rem; */
+    width: 90%;
+    text-align: left;
+}
+#p2{
+    /* padding-left: 5rem; */
+    width: 90%;
+}
+.susimportanceBlock_img img{
+    padding-top: 5rem;
+    width: auto;
+    height: 25rem;
+    border-radius: 1rem;
+}
+.fourth{
+    height: 150vh;
+    background-color: var(--darkclr);
+}
+.fourth .aboutTitle{
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--brightclr);
+
+}
+.aboutdivider{
+    width: 100%;
+    /* margin: 0 5% 0 5%; */
+    height: 1px;
+    background-color: var(--white);
+}
+.aboutMain{
+    /* background-color: antiquewhite; */
+    width: 90%;
+    margin-left: 5%;
+}
+.mission{
+    /* background-color: #2edb70; */
+    width: 100%;
+    padding: 4rem;
+    text-align: center;
+}
+.mission h1{
+    color: var(--brightclr);
+    font-weight: 300;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+.mission h2{
+    color: var(--white);
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.mission h2 span{
+    color: var(--brightclr);
+}
+.goal{
+    /* background-color: #2edb70; */
+    width: 100%;
+    padding: 4rem;
+    text-align: center;
+}
+.goal h1{
+    color: var(--brightclr);
+    font-weight: 300;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+.goal h2{
+    color: var(--white);
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.goal h2 span{
+    color: var(--brightclr);
+}
+.teamTitle{
+    text-align: center;
+    padding: 5rem;
+    color: var(--white);
+    font-weight: 300;
+
+}
+.membercards{
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 15%;
+    border-radius: 10px;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  img {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .container {
+    background-color: var(--white);
+    padding: 1rem 1rem;
+    border-radius: 0 0 10px 10px ;
+  }
+
+  .container svg{
+      padding-top: 1rem;
+        height: auto;
+        width: 2rem;
+  }
 
 /* 1920*1080  Resolution Settings */
 
@@ -528,7 +764,7 @@ svg path{
         padding-top: 1rem;
         font-size: 1rem;
         font-weight: 300;
-        display: none;
+        
     }
     
     .goalblock:hover{
@@ -544,8 +780,8 @@ svg path{
         color: var(--white);
     }
     .goalblock:hover .goalText h2{
-        display: block;
         color: var(--white);
+        
     }
 }
 
@@ -554,7 +790,8 @@ svg path{
 
 @media screen and (max-width:700px){
     .nav-container{
-        position: relative;
+        position: fixed;
+        height: 4rem;
         
     }
 
@@ -565,17 +802,23 @@ svg path{
         margin: 0;
         width: 100%;
         position: absolute;
-        top: 88px;
+        top: 4rem;
         right: -105%;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
         /* opacity: 0; */
-        box-shadow: 0px 10px 10px grey;
+        box-shadow: 0px 5px 10px rgba(0,0, 0, .3);
         transition: all 0.5s ease;
+        z-index: 5;
     }
 
     #navbar-logo{
-        margin-left: 20px;
+        position: relative;
+        /* margin-left: 20px; */
+        top: 1rem;
+        left: 1rem;
+        /* width: auto; */
+        height: 2rem;
     }
 
     .nav-menu.active{
