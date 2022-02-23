@@ -199,11 +199,11 @@ html {
     height: calc(100vh - 5rem) ;
     
 }
-.featuredTitle{
+/* .featuredTitle{
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-}
+} */
 
 .courseText{
     position: relative;
@@ -292,11 +292,11 @@ svg path{
     /* background-color:aqua; */
     padding-top: 8rem;
     padding-bottom: 5rem;
-    position: absolute;
+    position: relative;
     font-size: 1rem;
     font-weight: 600;
-    left: 50%;
-    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
 }
 
 .selectCourse .solid-btn-courses{
@@ -483,6 +483,7 @@ background-color: var(--darkclr);
 }
 .learnmoreSDG{
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .learnmoreSDG-btn {
     font-size: 1.5rem;
@@ -609,6 +610,9 @@ background-color: var(--darkclr);
     display: flex;
     justify-content: space-between;
 }
+.card-Mobile{
+    display: none;
+}
 .card {
     box-shadow: 0 8px 10px 0 rgba(0,0,0,1);
     transition: 0.3s;
@@ -620,7 +624,7 @@ background-color: var(--darkclr);
     transform: scale(1.02);
   }
   
-  img {
+  .card img {
     border-radius: 10px 10px 0 0;
   }
   
@@ -638,7 +642,7 @@ background-color: var(--darkclr);
 
   .container a:hover svg path{
     fill:#1f008d
-    }
+  }
     .footer{
         height: 40vh;
         background-color: #0c2a46;
@@ -1047,9 +1051,9 @@ background-color: var(--darkclr);
 }
 
 
-/*Mobile Responsive*/
+/*Tablet Responsive*/
 
-@media screen and (max-width:700px){
+@media screen and (max-width:1000px){
     .nav-container{
         position: fixed;
         height: 4rem;
@@ -1064,6 +1068,7 @@ background-color: var(--darkclr);
         width: 100%;
         position: absolute;
         top: 4rem;
+        height: 30rem;
         right: -105%;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
@@ -1085,19 +1090,21 @@ background-color: var(--darkclr);
     .nav-menu.active{
         background: var(--darkclr);
         right: 0;
-        /* opacity: 1; */
         transform: all .5 ease;
+    }
+    .nav-menu a{
+        padding:1rem 3rem 1rem 3rem ;
     }
 
     .nav-links{
         text-align: center;
         line-height:80px;
         width: 100%;
-        display: inline;
+        /* display: none; */
 
     }
     .nav-menu li:hover{
-        background: var(--brightclr);
+        /* background: var(--brightclr); */
         transition: 0.2s ease-out;
         
     }
@@ -1112,12 +1119,12 @@ background-color: var(--darkclr);
         transition: all .4 ease-out;
     }
 
-    .nav-links:hover{
+    /* .nav-links:hover{
         border: none;
         padding: 0;
         transition: all .4 ease-out;
 
-    }
+    } */
 
     #mobile-menu{
         position: absolute;
@@ -1152,6 +1159,157 @@ background-color: var(--darkclr);
     }
     #mobile-menu.is-active .bar:nth-child(2){
         opacity: 0;
+    }
+
+    .girl{
+        display: none;
+    }
+
+    .features{
+        margin-left: 10%;
+        margin-right: 10%;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        justify-content: space-between;
+        gap: 4rem;
+    
+    }
+
+    #about-link{
+        height: 4rem;
+    }
+
+    .third{
+        height: 360vh;
+    }
+
+    .goals{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        padding-top: 3rem;
+        justify-content: center;
+        /* margin-left: 10%;
+        margin-right: 10%; */
+
+    }
+
+    .goalblock{
+        width: 100%;
+        padding: 1rem 5rem 1rem 5rem;
+        border: 0px solid;
+ 
+    }
+    .goalblock svg{
+        height: auto;
+        width: 3rem;
+        left: 50%;
+    }
+    .goalText h2{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+        font-weight: 300;
+        opacity: 1;
+        
+    }
+    .goalblock:hover{
+        background-color: #ebebeb;
+        border-color: var(--darkclr);
+        width: 100%;
+    }
+    .goalblock:hover .goalText h1{
+        color: var(--brightclr);
+    }
+    .goalblock:hover .goalText h2{
+        color: var(--brightclr);
+
+    }
+    .susdesc-main{
+        padding: 3rem 0 3rem 0;
+        display: block;
+        justify-self: center;
+    
+    }
+    .susdesc-main img{
+        margin: auto;
+        display: block;
+    }
+    .susdesc-right{
+        padding-top: 2rem;
+        width: 100%;
+    }
+    .learnmoreSDG{
+        display: flex;
+        justify-content: center;
+    }
+    .susDesc-Importance p{
+        padding-top: 2rem;
+    }
+    .susimportanceBlock1{
+        margin: 0 2rem 0 2rem;
+        display: block;
+    }
+    .susimportanceBlock_img{
+        display: flex;
+        justify-content: center;
+    }
+    .susimportanceBlock_img img{
+        padding-top: 2rem;
+        width: auto;
+        height: 15rem;
+        border-radius: 1rem;
+        transition: all 0.2s ease;
+    }
+    .membercards{
+        display: none;    
+    }
+    .card {
+        width: 55%;
+        border-radius: 10px;
+    }
+    .tile-Mobile img{
+        height: auto;
+        width: 8rem;
+        border-radius: 1rem 0 0 1rem;
+    }
+    .tile-Mobile{
+        background-color: var(--white);
+        display: flex;
+        width: 20rem;
+        border-radius: 1rem;
+        box-shadow: 0 8px 10px 0 rgba(0,0,0,1);
+        
+    }
+    .card-Mobile{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .cardText-mobile svg{
+        padding-top: 1rem;
+          height: auto;
+          width: 1.5rem;
+    }
+
+    .cardText-mobile a:hover svg path{
+        fill:#1f008d
+    }
+
+    .cardText-mobile h1{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .cardText-mobile h2{
+        font-weight: 300;
+        font-size: .8rem;
+    }
+
+    .cardText-mobile{
+        padding-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
 }
