@@ -813,7 +813,7 @@ background-color: var(--darkclr);
 
 /* 1366*768  Resolution Settings */
 
-@media screen and (max-width:1366px){
+@media screen and (min-width:1366px){
 
     .nav-container{
         height: 5rem;
@@ -1320,6 +1320,13 @@ background-color: var(--darkclr);
         height: 100vh;
         padding-top: 30vh;
     }
+    .hero_container{
+        display: flex;
+        justify-content: center;
+        margin: 0 5% 0 5%;
+        width: 90%;
+        /* background-color:chartreuse; */
+    }
     .rightContent{
         display: flex;
         flex-direction: column;
@@ -1551,7 +1558,7 @@ background-color: var(--darkclr);
     .card-Mobile{
         display: grid;
         grid-template-columns: repeat(1,auto);
-        justify-content: space-between;
+        justify-content: center;
         gap: 1rem;
     }
     .tile-Mobile img{
