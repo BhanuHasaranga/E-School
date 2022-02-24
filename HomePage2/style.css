@@ -1313,7 +1313,7 @@ background-color: var(--darkclr);
     }
 
 }
-@media screen and (max-width:360px){
+@media screen and (max-width:707px){
 
 
     .hero {
