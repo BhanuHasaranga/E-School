@@ -231,10 +231,10 @@ html {
     flex-direction: column;
     align-items: stretch;
     gap: 1rem;
+    list-style: none;
   }
   
   .streambtn {
-    list-style: none;
     padding: 1rem 2rem 1rem 2rem;
     background: var(--darkclr);
     border-radius: 3rem;
@@ -250,4 +250,10 @@ html {
     color: var(--darkclr);
     background-color: var(--brightclr);
     transition: all 0.2s ease-out;
+  }
+
+  .girl {
+    position: relative;
+    height: 35rem;
+    width: auto;
   }
