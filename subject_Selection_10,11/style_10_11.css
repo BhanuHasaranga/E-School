@@ -106,7 +106,7 @@ html {
     background-color: var(--darkclr);
 }
 .gradeTitle{
-    padding: 8rem 0 0 3rem;
+    padding: 8rem 0 0 1rem;
     font-size: 2rem;
     color: var(--brightclr);
 }
@@ -116,21 +116,22 @@ html {
 }
 .content img{
     position: absolute;
-    right: 5%;
+    right: 8%;
     top: 20%;
     width: 22rem;
     height: auto;
 }
 .subjectBlocks{
-    width: 100%;
-    padding: 2rem 0 0 5rem;
+    width: 50%;
+    padding: 2rem 0 0 3rem;
+    /* background-color: #fff; */
 }
 .subject{
     display: grid;
     grid-template-columns: repeat(2,auto);
     gap:2rem;
-    width: 80%;
-    background-color: #fff;
+    /* width: 30%; */
+    /* background-color: #fff; */
 }
 .subject a{
     text-decoration: none;
@@ -145,7 +146,7 @@ html {
     transition: all 0.3s ease;
 }
 .subjectText h2 {
-    font-weight: 300;
+    font-weight: 500;
 }
 .subjectText:hover {
     background-color: var(--brightclr);
@@ -262,3 +263,4 @@ html {
     #mobile-menu.is-active .bar:nth-child(2){
         opacity: 0;
     }
+}
