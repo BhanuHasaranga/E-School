@@ -204,7 +204,7 @@ html {
 .featured {
     padding: 2rem;
     position: relative;
-    top: 5rem;
+    padding-top: 5rem;
     display: flex;
     justify-content: space-around;
     height: 100vh;
@@ -224,7 +224,7 @@ html {
     font-weight: bold;
     font-size: 72px;
     text-align: center;
-    color: var(--darkclr);
+    color: var(--brightclr);
   }
   
   .stream-btns {
@@ -259,6 +259,7 @@ html {
     position: relative;
     height: 37.5rem;
     width: auto;
+    top: 2rem;
   }
 
   .footer{
