@@ -77,6 +77,7 @@
     width: 100%;
     align-items: center;
     gap: 7rem;
+    height: 100vh;
 
   }
 
@@ -149,7 +150,122 @@
     transition: all 0.2s ease-out;
   }
 
-  @media screen and (max-width: 700px) {
+.footer{
+    height: 45vh;
+    background-color: #0c2a46;
+    
+  }
+ .footerBlocks{
+    padding-top: 3rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+ }
+ .col1{
+    width: 25%;
+    font-size: 1.3rem;
+    color:#6e6e6e;
+    font-weight: 100;
+    padding-right: 3rem;
+  }
+  .col1 p{
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    padding-top: 2rem;
+    color: var(--white);
+  }
+  .col1 img{
+    height: auto;
+    width: 10rem;
+    
+  }
+  .col2{
+    padding-right: 3rem;
+  }
+  .col2 h1{
+    color: var(--brightclr);
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .Footernav{
+    padding-top: 1rem;
+    /* list-style: none; */
+  }
+  .Footernav a{
+    text-decoration: none;
+  }
+  .Footernav li{
+    font-weight: 300;
+    color: var(--white);
+    padding:.8rem;
+    transition: all 0.3s ease;
+  }
+  .Footernav li:hover{
+    color: var(--brightclr);
+  }
+  .col3 h1{
+    color: var(--brightclr);
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .footerGrades{
+    padding-top: 1rem;
+    /* list-style: none; */
+  }
+  .footerGrades a{
+    text-decoration: none;
+  }
+  .footerGrades li{
+    
+    font-weight: 300;
+    color: var(--white);
+    padding:.8rem;
+    transition: all 0.3s ease;
+  }
+  .footerGrades li:hover{
+    color: var(--brightclr);
+  }
+  .col4 h1{
+    color: var(--brightclr);
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .col4 h2{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--white);
+  }
+  .col4 h3{
+    color: var(--brightclr);
+    font-weight: 300;
+  }
+  .col4 a{
+    text-decoration: none;
+    
+  }
+  .col4 h3{
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+
+  }
+  .col4 svg{
+    height: auto;
+    width: 2.5rem;
+    padding-right: 1rem;
+  }
+  .col4 svg path{
+    fill: var(--white);
+  }
+  .footerIcons{
+    padding-top: 2rem;
+  }
+  .footerIcons a:hover svg path{
+    fill: var(--brightclr);
+  }
+
+@media screen and (max-width: 700px) {
     .nav-container {
       height: 4rem;
     }
