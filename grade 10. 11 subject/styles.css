@@ -132,7 +132,26 @@
   .icon:hover svg path{
     fill: #2edb70;
   }
-
+  .nav-buttons{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: auto auto;
+  }
+  .back-button{
+    position: relative;
+    border-radius: 40px;
+    padding: 1rem 2rem 1rem 2rem;
+    cursor: pointer;
+    font-weight: 700;
+    border: 1px solid var(--brightclr);
+    background-color: var(--white);
+    font-size: 1rem;
+  }
+  .back-button:hover{
+    background-color: var(--brightclr);
+    color: var(--white);
+    transition: all 0.2s ease-out;
+  }
   .home-button{
     position: relative;
     border-radius: 40px;
