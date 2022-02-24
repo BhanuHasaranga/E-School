@@ -280,6 +280,7 @@ svg path{
 .icon:hover{
     cursor:default;
     transform: scale(1.05);
+    cursor: pointer;
 }
 .icon:hover .text{
     color: #2edb70;
