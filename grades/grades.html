@@ -4,34 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="myscripts.js"></script>
-    <title>Document</title>
-</head>
 
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="myscripts.js" ></script>
+    
+</head>
+<body onload="load()">
     <div class="nav-container">
         <nav class="navbar">
-            <img src="Images/logo_New.png" id="navbar-logo">
-            <div class="menu-toggle" id="mobile-menu">
+            <img src="images\logo_New.png" id="navbar-logo">
+            <div class="menu-toggle" id="menu-toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="#" class="nav-links">Home</a></li>
-                <li><a href="#" class="nav-links">Cources</a></li>
+                <li><a href="#" class="nav-links">Courses</a></li>
                 <li><a href="#" class="nav-links">About </a></li>
                 <li><a href="#" class="nav-links" id="last-Link">contact us</a></li>
             </ul>
         </nav>
-</div>
+    </div>
 
-    <h1 class = "mainText">Select Your Grade</h1>
-    <a class="gradebtn" id="grade10" href="#">Grade 10</div>
-    <a class="gradebtn" id="grade10" href="#">Grade 11</div>
-    <a class="gradebtn" id="grade10" href="#">Grade 12</div>
-    <a class="gradebtn" id="grade10" href="#">Grade 13</div> 
-
+    <div class="featured">
+        <div class="left-content">
+            <img src="images/girl.png" class="girl">
+        </div>
+        <div class="right-content">
+            <h1 class = "mainText">Select Your Course</h1>
+            <ul class="grade-btns">
+                <li><a href="#" class=grade-btn id="grade10" >Grade 10</a></li>
+                <li><a href="#" class=grade-btn id="grade11" >Grade 11</a></li>
+                <li><a href="#" class=grade-btn id="grade12" >Grade 12</a></li>
+                <li><a href="#" class=grade-btn id="grade13" >Grade 13</a></li> 
+            </ul>
+        </div>
+    
+        
+    </div>
+    
+    
 </body>
 </html>
