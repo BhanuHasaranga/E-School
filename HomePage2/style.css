@@ -814,7 +814,7 @@ background-color: var(--darkclr);
 
 /* 1366*768  Resolution Settings */
 
-@media screen and (min-width:1366px){
+@media screen and (max-width:1366px){
 
     .nav-container{
         height: 5rem;
